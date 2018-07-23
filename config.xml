@@ -24,7 +24,6 @@
 	<preference name="android-minSdkVersion" value="14" />
 	<preference name="target-device" value="universal" />
 
-	<gap:plugin name="org.apache.cordova.inappbrowser" />
 
 	<!-- Optional splash screen image, e.g.: -->
 	<!-- <gap:splash src="splash.png" width="1024" height="768" /> -->
