@@ -18,7 +18,11 @@
 	<feature name="http://api.phonegap.com/1.0/network"/>
 	<feature name="http://api.phonegap.com/1.0/geolocation"/>
 	<feature name="http://api.phonegap.com/1.0/camera"/>
+
+	<!-- BROKEN
+	<gap:plugin name="org-apache-cordova-inappbrowser" />
 	<gap:plugin name="org-apache-cordova-media" />
+	-->
 
 	<preference name="orientation" value="landscape" />
 	<preference name="fullscreen" value="true" />
@@ -28,8 +32,6 @@
 	<preference name="deployment-target" value="8.0" />
 	<preference name="android-minSdkVersion" value="14" />
 	<preference name="target-device" value="universal" />
-
-	<gap:plugin name="org-apache-cordova-inappbrowser" />
 
 	<!-- Optional splash screen image, e.g.: -->
 	<!-- <gap:splash src="splash.png" width="1024" height="768" /> -->
