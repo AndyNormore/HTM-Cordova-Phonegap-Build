@@ -1,37 +1,33 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
-<widget id="com.masterdigitalservices.htm" version="1.0.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-	<name>New project</name>
-	<description>test</description>
-	<author email="test">test</author>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.masterdigitalservices.htm" version="1.0.2">
 
-	<icon src="www/icon-256.png" width="256" height="256" density="xxxhdpi" />
-	<icon src="www/icon-128.png" width="128" height="128" density="xhdpi" />
+	<name>HTM DriveByTool</name>
+	<description>Private App</description>
+	<author href="https://masterdigitalservices.com" email="andrewnormore@gmail.com">Andrew Normore</author>
 
-	<preference name="android-targetSdkVersion" value="26" />
+	<icon src="icon-128.png" width="128" height="128" />
+	<icon src="icon-256.png" width="256" height="256" gap:role="default" />
+
+	<preference name="permissions" value="none"/>
+	<preference name="android-targetSdkVersion" value="21" />
+
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	<feature name="http://api.phonegap.com/1.0/camera"/>
+	<gap:plugin name="org.apache.cordova.media" />
 
 	<preference name="orientation" value="landscape" />
 	<preference name="fullscreen" value="true" />
-	<preference name="DisallowOverscroll" value="true" />
-	<preference name="AllowInlineMediaPlayback" value="true" />
-
-	<config-file parent="UIStatusBarHidden" platform="ios" target="*-Info.plist"><true/></config-file>
-	<config-file parent="UIViewControllerBasedStatusBarAppearance" platform="ios" target="*-Info.plist"><false/></config-file>
-
+	<gap:config-file platform="ios" parent="UIStatusBarHidden"><true/></gap:config-file>
+	<gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance"><false/></gap:config-file>
 
 	<preference name="deployment-target" value="8.0" />
 	<preference name="android-minSdkVersion" value="14" />
-	<access origin="*" />
+	<preference name="target-device" value="universal" />
 
-	<plugin name="cordova-custom-config" />
-	<plugin name="cordova-plugin-camera" />
-	<plugin name="cordova-plugin-crosswalk-webview" />
-	<plugin name="cordova-plugin-file" />
-	<plugin name="cordova-plugin-media" />
-	<plugin name="cordova-plugin-statusbar" />
-	<plugin name="cordova-plugin-whitelist" />
-	<plugin name="cordova-plugin-wkwebview-engine" />
+	<gap:plugin name="org.apache.cordova.inappbrowser" />
 
+	<!-- Optional splash screen image, e.g.: -->
+	<!-- <gap:splash src="splash.png" width="1024" height="768" /> -->
 
-	<engine name="ios" />
-	<engine name="android" />
 </widget>
